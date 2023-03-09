@@ -18,7 +18,7 @@ class Stack{
     }
 
     void push(int element){
-        if(isFull){
+        if(isFull()){
             System.out.println("Stack overflow");
         }else{
             arr[top + 1] = element;
@@ -27,11 +27,11 @@ class Stack{
     }
 
     int pop(){
-        if(isEmpty){
+        if(isEmpty()){
             System.out.println("Stack underflow");
             return 0;
         }else{
-            previousTop = top;
+            int previousTop = top;
             top--;
             return arr[previousTop];
         }
