@@ -25,4 +25,19 @@ public class StringsAndCords {
         }
         return isUnique;
     }
+
+    public boolean checkPalindrome(String sampleString){
+        char[] stringChar = sampleString.toCharArray();
+        String newString = "";
+        boolean isPalindrome = false;
+
+        for (int i = stringChar.length - 1; i >= 0 ; i--) {
+            newString += stringChar[i];
+        }
+
+        if (sampleString.equals(newString)){
+            return true;
+        }
+        return isPalindrome;
+    }
 }

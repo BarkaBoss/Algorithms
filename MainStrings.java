@@ -5,5 +5,6 @@ public class MainStrings {
 
         System.out.println(playingStrings.reverseString("Barka"));
         System.out.println(playingStrings.uniqueCharacters("Musala"));
+        System.out.println(playingStrings.checkPalindrome("civic"));
     }
 }
