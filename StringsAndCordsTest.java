@@ -35,4 +35,9 @@ public class StringsAndCordsTest {
     public void checkPalindrome(){
         assertTrue("Should return true",stringsAndCords.checkPalindrome("civic"));
     }
+
+    @Test
+    public void testFibonacci(){
+        assertEquals(21, Fibonacci.getNthFib(9));
+    }
 }
